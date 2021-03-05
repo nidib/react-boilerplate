@@ -23,6 +23,7 @@
 		"arrow-parens": ["error", "as-needed"],
 		"comma-dangle": ["error", "never"],
 		"eol-last": ["error", "never"],
+		"import/no-extraneous-dependencies": "off",
 		"indent": ["error", "tab"],
 		"linebreak-style": ["error", "unix"],
 		"max-len": ["error", { "code": 150, "tabWidth": 4 }],
