@@ -2,16 +2,16 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
-import Home from 'pages/Home/Home';
+import About from 'pages/About/About';
 
-describe('Home tests', () => {
+describe('About tests', () => {
 	let wrapper;
 
 	describe('render tests', () => {
 		it('should render with no errors', () => {
 			wrapper = mount(
 				<Router>
-					<Home />
+					<About />
 				</Router>
 			);
 
