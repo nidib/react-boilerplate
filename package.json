@@ -1,6 +1,7 @@
 {
 	"name": "nidib-react-boilerplate",
-	"version": "0.1.0",
+	"version": "1.0.0",
+	"license": "MIT",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.11.4",
 		"@testing-library/react": "^11.1.0",
@@ -30,7 +31,9 @@
 	},
 	"scripts": {
 		"dev": "react-scripts start",
+		"prebuild": "rm -rf build/",
 		"build": "react-scripts build",
+		"postbuild": "react-snap",
 		"test": "react-scripts test --coverage --watchAll=false",
 		"tdd": "react-scripts test --watchAll",
 		"lint": "eslint ./src --ext .js,.jsx",
@@ -58,6 +61,7 @@
 		"eslint-plugin-jsx-a11y": "^6.4.1",
 		"eslint-plugin-react": "^7.22.0",
 		"eslint-plugin-react-hooks": "^4.2.0",
+		"react-snap": "^1.23.0",
 		"sinon": "^9.2.4"
 	}
 }
