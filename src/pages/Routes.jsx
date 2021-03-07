@@ -8,12 +8,14 @@ const Routes = () => {
 	return (
 		<Router>
 			<Switch>
-				<Route component={Home} path="/" exact />
-				<Route component={About} path="/about" exact />
-				<Route component={NoMatch} path="*" />
+				<Route component={Home} path='/' exact />
+				<Route component={About} path='/about' exact />
+				<Route component={NoMatch} path='*' />
 			</Switch>
 		</Router>
 	);
 };
+
+Routes.displayName = 'pages/Routes';
 
 export default Routes;

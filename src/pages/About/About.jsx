@@ -1,15 +1,18 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
+import GenericPage from 'components/GenericPage/GenericPage';
 
-class Books extends PureComponent {
+class About extends PureComponent {
 	render() {
 		return (
-			<>
-				<Link to="/">Home</Link>
+			<GenericPage title='About'>
+				<Link to='/'>Home</Link>
 				<h1>About</h1>
-			</>
+			</GenericPage>
 		);
 	}
 }
 
-export default Books;
+About.displayName = 'pages/About';
+
+export default About;
